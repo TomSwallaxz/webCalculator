@@ -1,59 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My-Calculator</title>
 
-    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet" />
-    <!--load all styles -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My-Calculator</title>
 
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
+  <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet" />
+  <!--load all styles -->
 
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <!-- script -->
-    <script src="index.js"></script>
-  </head>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 
-  <body>
-    <div class="box">
-      <div class="">
-        <h1>My First Calculator</h1>
-        <input type="text" class="col-md-4 mb-3" id="numberOne" /><br />
-        <input type="text" class="col-md-4 mb-3" id="numberTwo" /><br />
-        <input type="text" class="col-md-4 mb-3" id="result" /><br />
-      </div>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <!-- script -->
+  <script src="index.js"></script>
+</head>
 
-      <div class="d-flex justify-content-center">
-        <input
-          type="button"
-          class="btn btn-danger"
-          value="+"
-          onclick="calcAdd()"
-        />
-        <input
-          type="button"
-          class="btn btn-info"
-          value="-"
-          onclick="calcSub()"
-        />
-        <div>
-          <input type="button" class="btn btn-success" onclick="calcDiv()" />
-          <i class="fas fa-divide"></i>
-        </div>
-        <input
-          type="button"
-          class="btn btn-primary"
-          value="*"
-          onclick="calcMul()"
-        />
-      </div>
+<body>
+  <div class="box">
+    <div class="">
+      <h1>Web Calculator</h1>
+      <input type="text" class="col-md-4 mb-3" id="numberOne" /><br />
+      <input type="text" class="col-md-4 mb-3" id="numberTwo" /><br />
+      <input type="text" class="col-md-4 mb-3" id="result" /><br />
     </div>
-  </body>
+
+    <div class="d-flex justify-content-center">
+      <input type="button" class="btn btn-danger" value="+" onclick="calcAdd()" />
+      <input type="button" class="btn btn-info" value="-" onclick="calcSub()" />
+      <div>
+        <input type="button" class="btn btn-success" onclick="calcDiv()" />
+        <i class="fas fa-divide"></i>
+      </div>
+      <input type="button" class="btn btn-primary" value="*" onclick="calcMul()" />
+    </div>
+  </div>
+</body>
+
 </html>
