@@ -7,18 +7,18 @@ function calcAdd() {
 }
 
 function calcAdd() {
-  txtBox1 = Number.getElementById("numberOne").value;
-  txtBox2 = Number.getElementById("numberTwo").value;
+  txtBox1 = Number(document.getElementById("numberOne").value);
+  txtBox2 = Number(document.getElementById("numberTwo").value);
 
   sum = txtBox1 + txtBox2;
-  Document.getElementById("result").innerHTML = sum;
+  document.getElementById("result").setAttribute('value', sum);
 }
 
 function calcSub() {
   let firstInput = document.getElementById("numberOne").value;
   let secondInput = document.getElementById("numberTwo").value;
 
-  document.getElementById("result").innerHTML = firstInput - secondInput;
+  document.getElementById("result").setAttribute('value', firstInput - secondInput);
 }
 
 function calcMul() {
